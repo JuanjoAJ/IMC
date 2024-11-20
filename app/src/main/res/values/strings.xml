@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="title">Calculo de IMC</string>
+    <string name="height">Introduce altura</string>
+    <string name="weight">Introduce el peso</string>
+    <string name="male">Masculino</string>
+    <string name="female">Femenino</string>
+    <string name="calculate">Calcular</string>
+    <string name="reboot">Reiniciar</string>
+    <string name="low_weight">Bajo Peso</string>
+    <string name="normal_weight">Peso Normal</string>
+    <string name="pre_obesity">Pre-obesidad o Sobrepeso</string>
+    <string name="obesity_I">Obesidad Clase I</string>
+    <string name="obesity_II">Obesidad Clase II</string>
+    <string name="obesity_III">Obesidad Clase III</string>
+</resources>

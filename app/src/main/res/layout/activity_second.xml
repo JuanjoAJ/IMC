@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="30sp" />
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/height"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/weight"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="15sp"
+            android:enabled="false"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="15sp"
+            android:enabled="false"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_reboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reboot"
+        app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_imc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textSize="30sp"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textSize="30sp"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+            <ImageView
+                android:id="@+id/image_state"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:contentDescription=""
+                android:layout_gravity="center"
+                android:background="@drawable/estado1"
+                android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
